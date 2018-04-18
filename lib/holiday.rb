@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     print "#{season.capitalize}:"  #reminder! "#{}"
     holiday.each do |holiday_name,supplies| #pry and hashes go together like bacon and eggs
       supplies.join(",")
-      puts "#{holiday_name}:" + "#{supplies}"
+      puts "#{holiday_name.capitalize}:" + "#{supplies}"
     end
   end
 end
