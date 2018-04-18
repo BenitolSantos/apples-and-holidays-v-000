@@ -69,10 +69,10 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday_name,supplies| #pry and hashes go together like bacon and eggs
       puts "#{season.capitalize}:"
 
-      puts "  #{holiday_name.split("_").map.capitalize.join(" ")}: " + "#{supplies.join(", ")}"
+      puts "  #{holiday_name.split("_").collect.capitalize.join(" ")}: " + "#{supplies.join(", ")}"
       #.map iterates over an array
       #and makes changes within a block
-      #spits out new array with the changes like colllect!
+      #spits out new array with the changes like collect!
       #map is permament
     end
   end
