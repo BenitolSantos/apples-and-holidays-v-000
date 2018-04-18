@@ -68,7 +68,6 @@ def all_supplies_in_holidays(holiday_hash)
    #reminder! "#{}"
     holiday.each do |holiday_name,supplies| #pry and hashes go together like bacon and eggs
       puts "#{season.capitalize}:"
-
       puts "  #{holiday_name.split("_").map.capitalize.join(" ")}: " + "#{supplies.join(", ")}"
       #.map iterates over an array
       #and makes changes within a block
@@ -81,5 +80,4 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-
 end
