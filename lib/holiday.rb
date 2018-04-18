@@ -69,6 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday_name,supplies| #pry and hashes go together like bacon and eggs
       puts "#{season.capitalize}:"
       puts "  #{holiday_name.to_s.split("_").map {|x| x.capitalize}.join(" ")}: " + "#{supplies.join(", ")}"
+      binding.pry
       #.map iterates over an array
       #in this case {} is better than do end
       #and makes changes within a block
