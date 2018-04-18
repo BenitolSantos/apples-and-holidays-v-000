@@ -21,7 +21,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash.each do |season,holiday|
     holiday.each do |supplies_array|
       if supplies_array == :fourth_of_july
-        :fourth_of_july.values.first
+        :fourth_of_july.values.flatten.first
       end
     end
   end
