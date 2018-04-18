@@ -49,7 +49,6 @@ def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
   all_winter_supplies = []
   holiday_hash[:winter].each do |holiday|
-    binding.pry
     holiday[1].each do |supply| #using pry I realized that I .eached too many times
       all_winter_supplies << supply
     end
