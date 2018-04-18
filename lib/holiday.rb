@@ -70,6 +70,8 @@ def all_supplies_in_holidays(holiday_hash)
       puts "#{season.capitalize}:"
 
       puts "  #{holiday_name.split("_").map.capitalize.join(" ")}: " + "#{supplies.join(", ")}"
+      #.map iterates over an array
+      #and makes changes within a black
     end
   end
 end
