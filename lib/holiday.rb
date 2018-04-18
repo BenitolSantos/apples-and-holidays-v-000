@@ -50,8 +50,8 @@ def all_winter_holiday_supplies(holiday_hash)
   all_winter_supplies = []
   holiday_hash[:winter].each do |holiday|
     holiday[1].each do |supply| #using pry I realized that I .eached too many times
-      all_winter_supplies << supply
-    end
+      all_winter_supplies << supply #I made a new array all together and returned it.
+    end #pry helps!
   end
   all_winter_supplies
 end
