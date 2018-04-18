@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
 
       puts "  #{holiday_name.split("_").map.capitalize.join(" ")}: " + "#{supplies.join(", ")}"
       #.map iterates over an array
-      #and makes changes within a black
+      #and makes changes within a block
     end
   end
 end
